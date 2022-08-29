@@ -14,7 +14,20 @@ const Header({ Key? key }) : super(key: key);
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
-              Text('\$1000.00', style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),),
+              // Text('\$1000.00', style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),),
+                Text.rich(
+                  TextSpan(
+                    text: '\$',
+                    style: TextStyle(fontSize: 16),
+                    children: <TextSpan>[
+                      TextSpan(
+                        text: '1000.00',
+                        style: TextStyle(
+                            fontSize: 28, fontWeight: FontWeight.bold),
+                      ),
+                    ],
+                  ),
+                ),
               Text('Balanço disponível', style: TextStyle(fontSize: 16),),
             ],),
             Icon(Icons.account_circle, size: 42,),
