@@ -1,7 +1,8 @@
+import 'package:alubank/themes/theme_colors.dart';
 import 'package:flutter/material.dart';
 
 ThemeData MyTheme = ThemeData(
-  primarySwatch: Colors.purple,
-  primaryColor: Colors.purple,
+  primarySwatch: ThemeColors.primaryColor,
+  primaryColor: ThemeColors.primaryColor,
   brightness: Brightness.dark,
 );
